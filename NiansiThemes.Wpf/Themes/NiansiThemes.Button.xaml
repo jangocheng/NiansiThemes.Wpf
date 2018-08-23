@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ControlTemplate x:Key="ContentButtonTemplate" TargetType="{x:Type ButtonBase}">
+        <Grid 
+            Background="{TemplateBinding Background}"
+            IsEnabled="{TemplateBinding IsEnabled}"
+            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+            <ContentPresenter
+                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                RecognizesAccessKey="True"
+                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+        </Grid>
+    </ControlTemplate>
+
+    <!--  纯文字按钮样式  -->
+    <Style x:Key="NiansiThemes.ContentButtonStyle" TargetType="{x:Type ButtonBase}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Template" Value="{StaticResource ContentButtonTemplate}"/>
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value="0.4"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,51 @@
+﻿[
+  {
+    "Id": "A10001",
+    "Name": "首　页",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "A10002",
+    "Name": "前台问诊",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "A10003",
+    "Name": "门诊就诊",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "A10004",
+    "Name": "库存管理",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "A10005",
+    "Name": "数据分析",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "A10006",
+    "Name": "系统维护",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "A10007",
+    "Name": "云端专家",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  }
+]

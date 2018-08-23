@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:wpf="clr-namespace:NiansiThemes.Wpf">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/Fonts.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/Colors/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/Colors/Blue.xaml"/>
+
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/NiansiThemes.Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/Tile.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/TilesControl.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/WindowCommands.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/WindowButtonCommands.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/IconContentControl.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/HamburgerMenuBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/NiansiContentControl.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/NiansiWindow.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style BasedOn="{StaticResource NiansiThemes.WindowCommandsStyle}" TargetType="wpf:WindowCommands"/>
+    <Style BasedOn="{StaticResource NiansiThemes.WindowButtonCommandsStyle}" TargetType="wpf:WindowButtonCommands"/>
+    <Style BasedOn="{StaticResource NiansiThemes.HamburgerMenuBox}" TargetType="wpf:HamburgerMenuBox"/>
+    <Style BasedOn="{StaticResource NiansiThemes.IconContentControl}" TargetType="wpf:IconContentControl"/>
+</ResourceDictionary>

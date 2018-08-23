@@ -1,0 +1,66 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:wpf="clr-namespace:NiansiThemes.Wpf">
+    <Style x:Key="TilesControlItemContainerStyle" TargetType="ListBox">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Foreground" Value="{Binding Foreground, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+                    <Setter Property="Background" Value="{Binding Background, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+                    <Setter Property="SnapsToDevicePixels" Value="{Binding SnapsToDevicePixels, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListBoxItem">
+                                <StackPanel>
+                                    <Rectangle Height="1.5"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Rectangle Width="1.5"/>
+                                        <ContentPresenter
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        <Rectangle Width="1.5"/>
+                                    </StackPanel>
+                                    <Rectangle Height="1.5"/>
+                                </StackPanel>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBox">
+                    <ScrollViewer
+                        HorizontalScrollBarVisibility="Disabled"
+                        VerticalScrollBarVisibility="Auto">
+                        <WrapPanel
+                            Orientation="Horizontal"
+                            IsItemsHost="True"
+                            ScrollViewer.CanContentScroll="True"/>
+                    </ScrollViewer>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="wpf:TilesControl">
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="wpf:TilesControl">
+                    <Grid>
+                        <ListBox
+                            x:Name="Tiles"
+                            Width="{TemplateBinding Width}"
+                            Foreground="{TemplateBinding Foreground}"
+                            ItemsSource="{TemplateBinding ItemsSource}"
+                            ItemTemplate="{TemplateBinding ItemTemplate}"
+                            Style="{StaticResource TilesControlItemContainerStyle}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

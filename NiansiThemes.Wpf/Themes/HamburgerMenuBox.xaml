@@ -1,0 +1,112 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:wpf="clr-namespace:NiansiThemes.Wpf">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/NiansiThemes.Wpf;component/Themes/IconContentControl.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="HamburgerMenuBoxItemContainerStyle" TargetType="ListBox">
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBox">
+                    <ItemsPresenter/>
+                    <ControlTemplate.Resources>
+                        <ResourceDictionary>
+                            <Style TargetType="wpf:IconContentControl" BasedOn="{StaticResource NiansiThemes.IconContentControl}">
+                                <Setter Property="ContentEnabled" Value="{Binding IsPaneOpen, RelativeSource={RelativeSource AncestorType=wpf:HamburgerMenuBox}}"/>
+                                <Setter Property="Separator" Value="13"/>
+                                <Setter Property="Persist" Value="26"/>
+                            </Style>
+                        </ResourceDictionary>
+                    </ControlTemplate.Resources>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="HamburgerMenuBoxItemStyle" TargetType="ListBoxItem">
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Padding" Value="{Binding Padding, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+        <Setter Property="Foreground" Value="{Binding Foreground, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+        <Setter Property="Background" Value="{Binding Background, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+        <Setter Property="SnapsToDevicePixels" Value="{Binding SnapsToDevicePixels, RelativeSource={RelativeSource AncestorType=ListBox}}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBoxItem">
+                    <Grid Background="{TemplateBinding Background}">
+                        <ContentPresenter
+                            Margin="{TemplateBinding Padding}"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource AccentColorBrush4}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseDirectlyOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ButtonPressedBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource AccentColorBrush4}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.4"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NiansiThemes.HamburgerMenuBox" TargetType="wpf:HamburgerMenuBox">
+        <Setter Property="Padding" Value="18 3"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource IdealForegroundColorBrush}"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource HamburgerMenuBoxItemStyle}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="wpf:HamburgerMenuBox">
+                    <Grid Width="{TemplateBinding Width}">
+                        <StackPanel>
+                            <Grid
+                                x:Name="Toggle"
+                                Height="40">
+                                <ToggleButton
+                                    x:Name="ToggleButton"
+                                    Style="{DynamicResource NiansiThemes.ContentButtonStyle}"
+                                    Foreground="{TemplateBinding Foreground}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    HorizontalAlignment="Left"
+                                    Margin="{TemplateBinding Padding}"
+                                    Width="22"
+                                    Height="22">
+                                    <Path
+                                        Data="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+                                        Fill="{TemplateBinding Foreground}"/>
+                                </ToggleButton>
+                            </Grid>
+                            <ListBox
+                                x:Name="HamburgerMenuBox"
+                                Grid.Row="1"
+                                Padding="{TemplateBinding Padding}"
+                                Width="{TemplateBinding Width}"
+                                Foreground="{TemplateBinding Foreground}"
+                                ItemsSource="{TemplateBinding ItemsSource}"
+                                ItemContainerStyle="{TemplateBinding ItemContainerStyle}"
+                                ItemTemplate="{TemplateBinding ItemTemplate}"
+                                Style="{StaticResource HamburgerMenuBoxItemContainerStyle}"/>
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ToggleEnabled" Value="False">
+                            <Setter TargetName="Toggle" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

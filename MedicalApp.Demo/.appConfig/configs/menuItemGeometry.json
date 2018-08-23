@@ -1,0 +1,142 @@
+﻿[
+  {
+    "Id": "D010001",
+    "FatherId": "B020001",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010002",
+    "FatherId": "B020002",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010003",
+    "FatherId": "B020003",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010004",
+    "FatherId": "B020004",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010005",
+    "FatherId": "B020005",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010006",
+    "FatherId": "B020006",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010007",
+    "FatherId": "B020007",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010008",
+    "FatherId": "B020008",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010009",
+    "FatherId": "B020009",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010010",
+    "FatherId": "B030001",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010011",
+    "FatherId": "B030002",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010012",
+    "FatherId": "B040001",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010013",
+    "FatherId": "B040002",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010014",
+    "FatherId": "B040003",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010015",
+    "FatherId": "B040004",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010016",
+    "FatherId": "B040005",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010017",
+    "FatherId": "B040006",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010018",
+    "FatherId": "B040007",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010021",
+    "FatherId": "B040008",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010022",
+    "FatherId": "B040009",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010023",
+    "FatherId": "B040010",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010024",
+    "FatherId": "B050001",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010025",
+    "FatherId": "B060001",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010026",
+    "FatherId": "B060002",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010027",
+    "FatherId": "B060003",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010028",
+    "FatherId": "B060004",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010029",
+    "FatherId": "B060005",
+    "GeometryData": ""
+  },
+  {
+    "Id": "D010030",
+    "FatherId": "B060006",
+    "GeometryData": ""
+  }
+]

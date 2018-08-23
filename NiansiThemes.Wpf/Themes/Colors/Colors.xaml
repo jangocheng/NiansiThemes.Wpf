@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+    <Color x:Key="BlackColor">#FF000000</Color>
+    <Color x:Key="WhiteColor">#FFFFFFFF</Color>
+
+    <!--  100%  -->
+    <Color x:Key="CloseColor">#FFFF3030</Color>
+    <!--  80%  -->
+    <Color x:Key="CloseColor2">#CCFF3030</Color>
+
+    <!--  re-set brushes too  -->
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="BlackBrush" Color="{StaticResource BlackColor}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="IdealForegroundColorBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="IdealForegroundDisabledBrush" Color="{StaticResource WhiteColor}" Opacity="0.4" options:Freeze="True" />
+
+    <!--  the close command button mouseOver brush  -->
+    <SolidColorBrush x:Key="CloseBrush" Color="{StaticResource CloseColor}" options:Freeze="True" />
+    <!--  the close command button pressed brush  -->
+    <SolidColorBrush x:Key="CloseBrush2" Color="{StaticResource CloseColor2}" options:Freeze="True" />
+    
+</ResourceDictionary>

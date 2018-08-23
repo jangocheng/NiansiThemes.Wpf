@@ -1,0 +1,226 @@
+﻿[
+  {
+    "Id": "B020001",
+    "FatherId": "A10002",
+    "Name": "健康档案",
+    "FrmAssemblie": "",
+    "FrmEntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020002",
+    "FatherId": "A10002",
+    "Name": "挂号预约",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020003",
+    "FatherId": "A10002",
+    "Name": "收银台",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020004",
+    "FatherId": "A10002",
+    "Name": "排班",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020005",
+    "FatherId": "A10002",
+    "Name": "病人查询",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020006",
+    "FatherId": "A10002",
+    "Name": "收费单据查询",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020007",
+    "FatherId": "A10002",
+    "Name": "会员管理",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020008",
+    "FatherId": "A10002",
+    "Name": "回访管理",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B020009",
+    "FatherId": "A10002",
+    "Name": "发药",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B030001",
+    "FatherId": "A10003",
+    "Name": "治疗方案",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B030002",
+    "FatherId": "A10003",
+    "Name": "转诊",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040001",
+    "FatherId": "A10004",
+    "Name": "入库",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040002",
+    "FatherId": "A10004",
+    "Name": "出库",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040003",
+    "FatherId": "A10004",
+    "Name": "盘点",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040004",
+    "FatherId": "A10004",
+    "Name": "申领",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040005",
+    "FatherId": "A10004",
+    "Name": "库存查询",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040006",
+    "FatherId": "A10004",
+    "Name": "单据查询",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040007",
+    "FatherId": "A10004",
+    "Name": "单据审核",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040008",
+    "FatherId": "A10004",
+    "Name": "采购计划",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040009",
+    "FatherId": "A10004",
+    "Name": "进出日志查询",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B040010",
+    "FatherId": "A10004",
+    "Name": "警报",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B050001",
+    "FatherId": "A10005",
+    "Name": "报表分析",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B060001",
+    "FatherId": "A10006",
+    "Name": "角色权限",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B060002",
+    "FatherId": "A10006",
+    "Name": "用户管理",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B060003",
+    "FatherId": "A10006",
+    "Name": "药品维护",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B060004",
+    "FatherId": "A10006",
+    "Name": "系统日志",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B060005",
+    "FatherId": "A10006",
+    "Name": "模板管理",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  },
+  {
+    "Id": "B060006",
+    "FatherId": "A10006",
+    "Name": "医院信息",
+    "Assemblie": "",
+    "EntityName": "",
+    "IsActive": true
+  }
+]

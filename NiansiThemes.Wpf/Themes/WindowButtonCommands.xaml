@@ -1,0 +1,69 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:wpf="clr-namespace:NiansiThemes.Wpf">
+
+    <ControlTemplate x:Key="WindowButtonCommandsTemplate" TargetType="wpf:WindowButtonCommands">
+        <StackPanel Orientation="Horizontal">
+            <Button 
+                x:Name="MinButton"
+                Style="{DynamicResource NiansiThemes.ContentButtonStyle}"
+                ToolTip="{Binding Minimize, RelativeSource={RelativeSource TemplatedParent}}"
+                Width="45"
+                Height="30">
+                <Path 
+                    Data="F1M0,6L0,9 9,9 9,6 0,6z"
+                    Fill="{TemplateBinding Foreground}"
+                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+            </Button>
+            <Button 
+                x:Name="MaxButton"
+                Style="{DynamicResource NiansiThemes.ContentButtonStyle}"
+                ToolTip="{Binding Maximize, RelativeSource={RelativeSource TemplatedParent}}"
+                Width="45"
+                Height="30">
+                <Path 
+                    Data="F1M0,0L0,9 9,9 9,0 0,0 0,3 8,3 8,8 1,8 1,3z"
+                    Fill="{TemplateBinding Foreground}"
+                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+            </Button>
+            <Button 
+                x:Name="CloseButton"
+                Style="{DynamicResource NiansiThemes.ContentButtonStyle}"
+                ToolTip="{Binding Close, RelativeSource={RelativeSource TemplatedParent}}"
+                Width="45"
+                Height="30">
+                <Path 
+                    Data="M 10.009,1.704 L 8.331,0.026 5.03,3.327 1.703,0 0,1.704 3.326,5.031 0.025,8.332 1.703,10.009 5.004,6.708 8.305,10.009 10.009,8.305 6.708,5.005"
+                    Fill="{TemplateBinding Foreground}"
+                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+            </Button>
+        </StackPanel>
+        <ControlTemplate.Triggers>
+            <Trigger SourceName="MinButton" Property="IsMouseOver" Value="True">
+                <Setter TargetName="MinButton" Property="Background" Value="{DynamicResource ButtonMouseOverBrush}"/>
+            </Trigger>
+            <Trigger SourceName="MinButton" Property="IsPressed" Value="True">
+                <Setter TargetName="MinButton" Property="Background" Value="{DynamicResource ButtonPressedBrush}"/>
+            </Trigger>
+            <Trigger SourceName="MaxButton" Property="IsMouseOver" Value="True">
+                <Setter TargetName="MaxButton" Property="Background" Value="{DynamicResource ButtonMouseOverBrush}"/>
+            </Trigger>
+            <Trigger SourceName="MaxButton" Property="IsPressed" Value="True">
+                <Setter TargetName="MaxButton" Property="Background" Value="{DynamicResource ButtonPressedBrush}"/>
+            </Trigger>
+            <Trigger SourceName="CloseButton" Property="IsMouseOver" Value="True">
+                <Setter TargetName="CloseButton" Property="Foreground" Value="{DynamicResource WhiteBrush}"/>
+                <Setter TargetName="CloseButton" Property="Background" Value="{DynamicResource CloseBrush}"/>
+            </Trigger>
+            <Trigger SourceName="CloseButton" Property="IsPressed" Value="True">
+                <Setter TargetName="CloseButton" Property="Background" Value="{DynamicResource CloseBrush2}"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Key="NiansiThemes.WindowButtonCommandsStyle" TargetType="wpf:WindowButtonCommands">
+        <Setter Property="Foreground" Value="{DynamicResource IdealForegroundColorBrush}"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Template" Value="{StaticResource WindowButtonCommandsTemplate}"/>
+    </Style>
+</ResourceDictionary>
