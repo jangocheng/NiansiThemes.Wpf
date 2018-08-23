@@ -1,8 +1,6 @@
-NiansiThemes.Wpf
-=================
+# NiansiThemes.Wpf
 
-项目的一些说明
------------------
+### 项目的一些说明
 
 项目中包含NiansiThemes.Wpf、NiansiThemes.Wpf.Demo、MedicalAppDemo。
 
